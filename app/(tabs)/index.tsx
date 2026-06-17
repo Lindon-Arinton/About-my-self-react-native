@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import {
+  Image,
+  Linking,
+  Modal,
+  Pressable,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
   View,
-  Pressable,
-  Modal,
-  Image,
-  Linking,
 } from "react-native";
 
-import { LinearGradient } from "expo-linear-gradient";
 import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 type Project = {
   title: string;
   tech: string;
@@ -31,7 +31,7 @@ const skills: string[] = [
 
 const projects: Project[] = [
   {
-    title: "Kitchen Display System",
+    title: "Kitchen Display and Inventory System",
     tech: "Java Swing + MySQL",
     description:
       "Ordering and kitchen management system for burger shops.",
